@@ -1,0 +1,6 @@
+{
+  "name": "Deekshitha Biodata",
+  "description": "A premium, cinematic, modern, and devotional Hindu matrimonial biodata.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
