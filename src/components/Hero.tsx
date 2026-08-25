@@ -45,7 +45,7 @@ export default function Hero() {
               onError={(e) => {
                 // Fallback if image doesn't exist yet
                 const target = e.target as HTMLImageElement;
-                target.src = "/WhatsApp Image 2026-08-24 at 10,47,04 PM-Picsart-AiImageEnhancer.jpeg";
+                target.src = "src/components/WhatsApp Image 2026-08-24 at 10,47,04 PM-Picsart-AiImageEnhancer.jpeg;
               }}
             />
           </div>
