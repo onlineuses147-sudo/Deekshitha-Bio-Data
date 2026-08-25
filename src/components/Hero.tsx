@@ -45,7 +45,9 @@ export default function Hero() {
               onError={(e) => {
                 // Fallback if image doesn't exist yet
                 const target = e.target as HTMLImageElement;
-                target.src = "src/components/WhatsApp Image 2026-08-24 at 10,47,04 PM-Picsart-AiImageEnhancer.jpeg";
+                if (!target.src.includes('unsplash')) {
+                  target.src = "https://images.unsplash.com/photo-1582293041079-7814c2f12063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                }
               }}
             />
           </div>
