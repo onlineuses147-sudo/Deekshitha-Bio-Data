@@ -46,7 +46,7 @@ export default function Hero() {
                 // Fallback if image doesn't exist yet
                 const target = e.target as HTMLImageElement;
                 if (!target.src.includes('unsplash')) {
-                  target.src = "https://images.unsplash.com/photo-1582293041079-7814c2f12063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                  target.src = "profile.jpeg";
                 }
               }}
             />
