@@ -14,7 +14,7 @@ const details = [
   { label: 'Gotra', value: 'Bharadhwaja', icon: Scroll },
   { label: 'Height', value: '5 ft. 2 in.', icon: Ruler },
   { label: 'Education', value: 'BAMS', icon: GraduationCap },
-  { label: 'Occupation', value: 'House Surgeon', icon: Stethoscope, colSpan: true },
+  { label: 'Occupation', value: '-', icon: Stethoscope, colSpan: true },
 ];
 
 export default function PersonalDetails() {

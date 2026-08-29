@@ -39,14 +39,14 @@ export default function Hero() {
           
           <div className="relative w-64 h-64 md:w-[340px] md:h-[340px] rounded-full overflow-hidden border-2 border-gold/60 shadow-[0_0_40px_rgba(212,175,55,0.3)] z-10 bg-ivory">
             <img 
-              src="WhatsApp Image 2026-08-24 at 10,47,04 PM-Picsart-AiImageEnhancer.jpeg" 
+              src="/WhatsApp Image 2026-08-24 at 10,47,04 PM-Picsart-AiImageEnhancer.jpeg" 
               alt="Gaddam Deekshitha" 
               className="w-full h-full object-cover object-[center_25%] scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
               onError={(e) => {
                 // Fallback if image doesn't exist yet
                 const target = e.target as HTMLImageElement;
                 if (!target.src.includes('unsplash')) {
-                  target.src = "profile.jpeg";
+                  target.src = "https://images.unsplash.com/photo-1582293041079-7814c2f12063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
                 }
               }}
             />
@@ -69,7 +69,7 @@ export default function Hero() {
           className="flex flex-col items-center space-y-3"
         >
           <p className="font-sans text-xs md:text-sm tracking-[0.25em] uppercase text-rose font-semibold">
-            BAMS <span className="mx-3 text-gold/60">|</span> House Surgeon
+            BAMS
           </p>
           <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase text-brown/50">
             Khammam, Telangana

@@ -39,7 +39,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-serif text-2xl md:text-4xl text-brown leading-relaxed text-balance"
           >
-            <span className="text-maroon">Gaddam Deekshitha</span> is a BAMS graduate and House Surgeon from Khammam, Telangana. Her biodata reflects her education, family values, traditions, and the journey that has shaped her.
+            <span className="text-maroon">Gaddam Deekshitha</span> is a BAMS graduate from Khammam, Telangana. Her biodata reflects her education, family values, traditions, and the journey that has shaped her.
           </motion.p>
         </div>
       </div>

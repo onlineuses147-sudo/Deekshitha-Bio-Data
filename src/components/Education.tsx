@@ -53,7 +53,7 @@ export default function Education() {
             className="p-8 glass rounded-3xl min-w-[280px] mt-4 bg-cream/80"
           >
             <h3 className="font-sans text-xs tracking-widest uppercase text-brown/50 mb-2">Profession</h3>
-            <p className="font-serif text-3xl text-maroon">House Surgeon</p>
+            <p className="font-serif text-3xl text-maroon">-</p>
           </motion.div>
         </div>
       </div>

@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from 'react';
-import { AnimatePresence } from 'motion/react';
+import { useState, useEffect, useRef, ReactNode } from 'react';
+import { AnimatePresence, motion, useInView } from 'motion/react';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -16,6 +16,22 @@ import Education from './components/Education';
 import Devotional from './components/Devotional';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+function SectionFadeUp({ children }: { children: ReactNode }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,13 +55,13 @@ export default function App() {
       
       <main>
         <Hero />
-        <About />
-        <PersonalDetails />
-        <Family />
-        <Traditions />
-        <Education />
-        <Devotional />
-        <Contact />
+        <SectionFadeUp><About /></SectionFadeUp>
+        <SectionFadeUp><PersonalDetails /></SectionFadeUp>
+        <SectionFadeUp><Family /></SectionFadeUp>
+        <SectionFadeUp><Traditions /></SectionFadeUp>
+        <SectionFadeUp><Education /></SectionFadeUp>
+        <SectionFadeUp><Devotional /></SectionFadeUp>
+        <SectionFadeUp><Contact /></SectionFadeUp>
       </main>
 
       <Footer />

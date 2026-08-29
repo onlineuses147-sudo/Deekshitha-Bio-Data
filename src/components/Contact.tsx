@@ -67,9 +67,6 @@ export default function Contact() {
             <MessageCircle size={18} strokeWidth={2} className="group-hover:animate-pulse" />
             <span className="font-sans text-sm tracking-widest uppercase font-semibold">WhatsApp</span>
           </a>
-          <a href="https://maps.google.com/?q=Lecturers+Colony,+Near+BBM+School,+Khammam,+Telangana" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-8 py-4 bg-transparent text-brown border border-brown/20 hover:border-gold hover:text-gold-dark rounded-full flex items-center justify-center space-x-3 transition-colors">
-            <span className="font-sans text-sm tracking-widest uppercase font-medium">View Location</span>
-          </a>
         </motion.div>
       </div>
     </section>
