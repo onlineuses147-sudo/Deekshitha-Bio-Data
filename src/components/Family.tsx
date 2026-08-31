@@ -2,9 +2,9 @@ import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 
 const family = [
-  { role: 'Father', name: 'Ramesh Babu Gaddam', occupation: 'Govt. Employee' },
+  { role: 'Father', name: 'Ramesh Babu Gaddam', occupation: 'RTC Employee' },
   { role: 'Mother', name: 'Madhavi Gaddam', occupation: 'Housewife' },
-  { role: 'Sibling', name: '1 Younger Brother', occupation: 'BTECH' },
+  { role: 'Sibling', name: '1 Younger Brother', occupation: 'Currently pursuing B.Tech' },
 ];
 
 export default function Family() {
